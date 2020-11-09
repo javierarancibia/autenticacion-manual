@@ -1,1 +1,22 @@
-<h1>hola</h1>
+<h1>Iniciar Sesion</h1>
+
+<%= form_with(model:@user, local: true) do |f| %>
+
+    <div>
+        <%= f.label :nombre, 'email'%>
+        <%= f.text_field :name %>
+    </div>
+
+    <div>
+        <%= f.label :email, 'email'%>
+        <%= f.email_field :email %>
+    </div>
+
+    <div>
+        <%= f.label :contraseña, 'contraseña'%>
+        <%= f.password_field :password_digest %>
+    </div>
+
+    <%= f.submit 'Iniciar Sesion' %>
+
+<% end %>

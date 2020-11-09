@@ -21,6 +21,7 @@
             <li><%=link_to 'Create PicStory', new_story_path %></li>
             <li><%=link_to 'My PicStories', stories_path %></li>
             <li><% link_to 'My Profile', user_path(:user_id) %></a></li>
+            <li><% link_to 'Crear Cuenta', new_user_path %></a></li>
             <li><%= link_to  "Iniciar Sesion", new_session_path %></li>
             <li><%#= link_to  "Cerrar Sesion", session_path(current_user.id), method: :delete %>
 
